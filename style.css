@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px 30px 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.heromain{
+  display: flex;
+margin: 0 auto;
+padding: 0 auto;
+  max-width: 1100px;;  
+}
+
+.heromain .div{
+ margin: 60px 0 0 60px;
+}
+
+.heromain .div span{
+  background-color: #149F39;
+  color: white;
+ 
+  padding: 10px 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.heromain .div h1{ 
+  font-size: 72px;
+  font-weight: 500;
+  margin-top: 20px; 
+}
+
+.heromain .div p{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.heromain .div button{
+  background-color: #FFC066;
+  border: none;
+  min-width: 174px;
+  height: 57px;
+  margin-top: 20px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.heromain .div button:hover{
+  background-color: #faba5f;
+}
+
+.herofooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.herofooter .discount{
+  display: flex;
+  align-items: center;
+
+ margin: 78px 0 40px 0;
+
+ max-width: 300px;
+  height: 90px;
+  padding: auto;
+  gap: 10px;
+}
+
+.herofooter .discount:hover{ box-shadow:0px 24px 48px 0 rgba(0,0,0,0.16);
+  }
+
+.herofooter .discount .discountpart h1{
+font-size: 18px;
+font-weight: 600;
+} 
+
+.herofooter .discount .discountpart p{
+  font-size: 14px;
+  font-weight: 300;
+  } 
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  main button{ background-color: #149F39;
+    margin-top: 70px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 24px;
+    text-align: center;
+  border: 0;
+}
+
+  main h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 25px 0 40px 0;
+  } 
+
+  main section{
+   display: grid;
+     row-gap: 31px;
+     column-gap: 26px;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     margin: 0 auto;
+     max-width: 1200px;
+    }
+
+    main section .img1{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    main section .img2{
+
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    main section .img4{ grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    main section .img5{ grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    } 
+    main section .img6{ grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    main section .img7{ grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      margin-top: 6px;
+    }
+main section .imgpart:hover{
+  transform: scale(1.05); 
+}
+  footer{
+    background-color: #FFF0DB;
+  
+
+  }
+
+  .four{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 1200px;
+    padding: 35px 0 145px 0;
+  
+  }
+.sec{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+  .sec h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #565656;
+  }
+
+  .sec .list{
+    display: flex;
+    flex-direction: column;
+  gap: 6px;
+  }
+
+  .seclogo{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+.seclogo .logolist{
+  display: flex;
+  gap: 10px;
+  
+  align-items: start;
+}
+
+.seclogo input{
+  
+  
+  max-width: 265px;
+  height: 24px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1220px) {
+main section{
+max-width: 1000px;
+margin: 0;
+}
+.img1{width: 425px;}
+.imgpart{
+  width: 200px;
+}
+ 
+}
+  
+@media screen and (max-width: 1188px) {
+  .heromain{
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .heromain img{
+    max-width: 900px;
+    margin: 0;
+  }
+
+  .heromain .div{
+    padding: 50px 0 50px 0;
+   margin: 0;
+    min-width: 100%;
+  }
+  
+  
+  .heromain .div h1,p{
+    text-align: center;
+  }
+  
+  .heromain .div span, button{
+    display: block;
+    width: 100%;
+  }
+  .herofooter{
+    justify-content: center;
+    gap: 5px;
+ padding: 5px; }
+}
